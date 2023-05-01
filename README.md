@@ -2,13 +2,7 @@
 ## Homework 1
 • Form groups of 3 to 5 students \
 • Interact with “HelloWorld.sol” within your group to change message strings and change owners \
-• Write a report with each function execution and the transaction hash, if successful, or the revert reason, if failed. 
-
-The transaction hash for the deployment of the HelloWorld contract is: 
-0x678bbcc8fe06e6978c25cd972f0357d712f9e5b5245756616f06c0c0cf41b724 
-
-The transaction hash for the deployment of the CountFailures contract is:
-0x8af43d85ddecdafdbdaaaf9fc0bb75dcebc441e7711cae22f185eb954ad7cf75 
+• Write a report with each function execution and the transaction hash, if successful, or the revert reason, if failed.
 
 The provided code has two Solidity contracts named HelloWorld and CountFailures. 
 
@@ -16,9 +10,30 @@ The HelloWorld contract stores a string text and an address owner, which are set
 
 The CountFailures contract has a counter variable that keeps count of the number of times the fallback function is executed. The fallback function is executed when the contract receives a transaction that does not match any of the defined functions. In this case, it increments the counter variable. The contract also has a receive function that can be used to receive ether.
 
-We ran the setText function, which allowed us to change the text to 'Hi'.
-https://goerli.etherscan.io/tx/0x459b5f800029486c7785068d9d181adf3abdbbd272d4c21c7ebef0d1c826f046
+We compiled and Deployed the Hello World contract in Hello World.sol
 
-We can see the last 3 transactions 
-Set Text and Transfer Ownership.
-https://goerli.etherscan.io/address/0xf5451c166e1eb8e8c4e61c3d8643111a647a74f1
+Transaction for Contract Deployment
+https://goerli.etherscan.io/tx/0x9fb7142664c2f5189a9d53c002eacda6386838f14953392449b36a3eed00073c
+
+The address of the new contract we have created is: 0xaf5ec484addf721ae156ba9fccd5412a0068b3ee
+
+We can view the contract and all of our tests here:
+https://goerli.etherscan.io/address/0xaf5ec484addf721ae156ba9fccd5412a0068b3ee
+
+We tested the setText function. We changed the string to each of the following. 
+
+Test 1: Hi Group 5
+https://goerli.etherscan.io/tx/0xd5a0992a8657905d437c81fcd1b572ee97789d5f270e82cc5b6e28d283e67891
+
+Test 2: null
+https://goerli.etherscan.io/tx/0x49b269e5192c4d20bbe67a0d2d1b89092c48b5ad43f3c76cd715483539d10781
+
+Test 3: asfkjhasfghasfglhasdtlieirtowutuweituweotpweutpweuitpweutpuwepytupweuypweruypwue
+https://goerli.etherscan.io/tx/0xfd1539949bfe46d9b4dd4b19063b5f06b188f62610050fd1b0587a6268357097
+
+Test 4: Estado de SÃO PAULO Coçar
+https://goerli.etherscan.io/tx/0xcc6f6b4e21663654632e53e4c8da10b0a23811e62a2fc952bc4a0ea042ffb26c
+
+Test 5: Estado de S\xC3\x83O PAULO Co\xC3\xA7ar
+https://goerli.etherscan.io/tx/0xdb4197462ef0b520d388fe96fa2627e1352050c03331d0e2f2f4e038631ddfbf
+
