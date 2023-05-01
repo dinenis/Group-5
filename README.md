@@ -8,7 +8,7 @@ The transaction hash for the deployment of the HelloWorld contract is:
 0x678bbcc8fe06e6978c25cd972f0357d712f9e5b5245756616f06c0c0cf41b724 
 
 The transaction hash for the deployment of the CountFailures contract is:
-
+0x8af43d85ddecdafdbdaaaf9fc0bb75dcebc441e7711cae22f185eb954ad7cf75 
 
 The provided code has two Solidity contracts named HelloWorld and CountFailures. 
 
