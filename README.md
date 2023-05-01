@@ -15,3 +15,10 @@ The provided code has two Solidity contracts named HelloWorld and CountFailures.
 The HelloWorld contract stores a string text and an address owner, which are set during contract deployment. It has a helloWorld function that is publicly viewable and returns the stored text. The setText function is public, but can only be called by the contract owner, using the onlyOwner modifier. Similarly, the transferOwnership function updates the owner address and can only be called by the contract owner due to the onlyOwner modifier. The onlyOwner modifier checks if the caller of the function is the contract owner before executing the function code.
 
 The CountFailures contract has a counter variable that keeps count of the number of times the fallback function is executed. The fallback function is executed when the contract receives a transaction that does not match any of the defined functions. In this case, it increments the counter variable. The contract also has a receive function that can be used to receive ether.
+
+We ran the setText function, which allowed us to change the text to 'Hi'.
+https://goerli.etherscan.io/tx/0x459b5f800029486c7785068d9d181adf3abdbbd272d4c21c7ebef0d1c826f046
+
+We can see the last 3 transactions 
+Set Text and Transfer Ownership.
+https://goerli.etherscan.io/address/0xf5451c166e1eb8e8c4e61c3d8643111a647a74f1
