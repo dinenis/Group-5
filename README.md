@@ -37,3 +37,16 @@ https://goerli.etherscan.io/tx/0xcc6f6b4e21663654632e53e4c8da10b0a23811e62a2fc95
 Test 5: Estado de S\xC3\x83O PAULO Co\xC3\xA7ar
 https://goerli.etherscan.io/tx/0xdb4197462ef0b520d388fe96fa2627e1352050c03331d0e2f2f4e038631ddfbf
 
+We can view the state changes in the contract itself. 
+https://goerli.etherscan.io/tx/0xcc6f6b4e21663654632e53e4c8da10b0a23811e62a2fc952bc4a0ea042ffb26c#statechange
+
+We then test the change ownership functions.
+https://goerli.etherscan.io/tx/0x4d4c3b33dc003b7a4c4516920122c650559480fbbfacdd1dc834bbf29593b117
+
+We then change the text. This fails as I am no longer the owner. 
+https://goerli.etherscan.io/tx/0x2ee032bcc928aff2150e79a34cc46fa56d8094e316814c9ec636c4b09b07f605
+
+
+
+
+
